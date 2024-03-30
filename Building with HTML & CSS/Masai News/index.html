@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>masai news</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      h1{
+        text-align: center;
+      }
+      #news {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #news > div {
+        width: 32%;
+        height: auto;
+        padding: 25px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 10px;
+      }
+      #news > div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .img{
+        width: 100%;
+        margin: auto;
+      }
+      
+      img{
+        width: 100%;
+        height: 224px;
+        border-radius: 20px;
+      }
+
+      #news > div >div+p{
+        color: rgb(52,112,228);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Masai In <span style="color: red">News</span></h1>
+    <div id="news">
+      <div>
+        <div class="img"><img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg"
+            alt=""
+          />
+        </div>
+        <p>28 Aug 2023</p>
+        <h4>Empowering Education Through GenAI</h4>
+        <p>
+          In the dynamic landscape of today's job market, Gen AI plays a
+          significant ...
+        </p>
+      </div>
+      <div>
+        <div class="img">
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Newsroom_2_2992584ee8.png"
+            alt=""
+          />
+        </div>
+        <p>05 May 2023</p>
+        <h4>Masai School targets fivefold revenue growth in three years</h4>
+        <p>
+          Masai School's growth plans indicate that the demand for skilled
+          workers in...
+        </p>
+      </div>
+      <div>
+        <div class="img">
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/BW_Article_ae95c310d7.jpeg"
+            alt=""
+          />
+        </div>
+        <p>25 May 2023</p>
+        <h4>
+          Beyond Degrees:Embracing Alternative Credentialing and Micro-learning
+          in Tech Recruitment
+        </h4>
+        <p>
+          The enduring presence of alternative credentialing and microlearning
+          indica...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
