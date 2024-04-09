@@ -62,17 +62,44 @@
 
   
  
-   addBtn.addEventListener("click",function(){
-    console.log(Number(numOne.value)+Number(numTwo.value))
-   })
-   subBtn.addEventListener("click",function(){
-    console.log(Number(numOne.value)-Number(numTwo.value))
-   })
-   mulBtn.addEventListener("click",function(){
-    console.log(Number(numOne.value)*Number(numTwo.value))
-   })
-   divBtn.addEventListener("click",function(){
-    console.log(Number(numOne.value)/Number(numTwo.value))
-   })
+  addBtn.addEventListener("click", function() {
+    if (numOne.value === "" || numTwo.value === "") {
+        alert("Please fill in both numbers.");
+    } else {
+        let result = Number(numOne.value) + Number(numTwo.value);
+        alert("Result of addition: " + result);
+    }
+});
+
+subBtn.addEventListener("click", function() {
+    if (numOne.value === "" || numTwo.value === "") {
+        alert("Please fill in both numbers.");
+    } else {
+        let result = Number(numOne.value) - Number(numTwo.value);
+        alert("Result of subtraction: " + result);
+    }
+});
+
+mulBtn.addEventListener("click", function() {
+    if (numOne.value === "" || numTwo.value === "") {
+        alert("Please fill in both numbers.");
+    } else {
+        let result = Number(numOne.value) * Number(numTwo.value);
+        alert("Result of multiplication: " + result);
+    }
+});
+
+divBtn.addEventListener("click", function() {
+    if (numOne.value === "" || numTwo.value === "") {
+        alert("Please fill in both numbers.");
+    } else if (Number(numTwo.value) === 0) {
+        alert("Cannot divide by zero.");
+    } else {
+        let result = Number(numOne.value) / Number(numTwo.value);
+        alert("Result of division: " + result);
+    }
+});
+
+   
 </script> 
 </html>
