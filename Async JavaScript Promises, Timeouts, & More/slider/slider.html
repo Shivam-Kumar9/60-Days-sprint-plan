@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#root{
+    width: 60%;
+    margin: auto;
+
+}
+#root>img{
+    width: 100%;
+    height: 500px;
+}
+#button{
+    width: 30%;
+
+
+    margin: auto;
+}#button>button{
+     margin-left: 180px;
+    height: 20px;
+    width: 30px;
+}
+</style>
+<body>
+
+ 
+<div id="root"> 
+
+
+</div>
+<br>
+<br>
+<div id="button"> 
+    <button onclick="previous()"><</button>
+    <button onclick="next()">></button>
+</div>
+
+<button onclick="stop()" id="btn">
+ STOP 
+</button>
+</body>
+<script>
+
+let arr =[
+           "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/247160/pexels-photo-247160.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2090649/pexels-photo-2090649.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2360684/pexels-photo-2360684.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2627945/pexels-photo-2627945.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/3560044/pexels-photo-3560044.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/3888585/pexels-photo-3888585.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/5326925/pexels-photo-5326925.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/64296/pexels-photo-64296.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            
+]
+
+let display= document.getElementById("root");
+
+var count=0;
+
+
+function previous(){
+    count--;
+    if(count<0){
+        count=arr.length-1;
+    }
+    img.src=arr[count];
+    clearInterval(clear)
+    clearInterval(clear2)
+}
+function next(){
+    count++;
+    if(count==arr.length){
+         count=0;
+    }
+    img.src=arr[count];
+    clearInterval(clear)
+    clearInterval(clear2)
+}
+
+function increasecount(){
+    count++;
+    if(count==arr.length){
+         count=0;
+    }
+    img.src=arr[count];
+ }
+ let clear = setInterval(increasecount,5000);
+
+
+ let slide=0;
+function stop(){
+    let btn=document.getElementById("btn");
+if(slide==0 ){
+    clearInterval(clear)
+
+    btn.innerHTML="START "
+    slide=1;
+
+} 
+
+ else {
+
+
+   let clear2= setInterval(increasecount,5000);
+    slide=0;
+    btn.innerHTML="STOP "
+}
+
+}
+
+let img=document.createElement("img")
+img.id="imgtag";
+img.src=arr[count];
+img.alt=" slide show example ";
+
+
+display.append(img)
+
+
+
+</script>
+</html>
