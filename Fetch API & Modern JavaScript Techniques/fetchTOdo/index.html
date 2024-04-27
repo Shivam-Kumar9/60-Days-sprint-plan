@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #root{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 76%;
+            margin: auto;
+        }
+        #root>div{
+          box-shadow: 1px 1px 1px 1px rgb(168, 168, 168);
+          padding: 5px;
+          border-radius: 5px;
+        }
+    </style>
 </head>
-<style>
-#box{
-    display: flex;
-}
-
-</style>
 <body>
-
-
-<div id="root"> </div>    
-
+    <hr style="margin: 20px;">
+    <button id="btn" onclick="getdata()">fetch todo</button>
+    <hr style="margin: 20px;">
+    <div id="root"></div>
 </body>
-<script src="index.js">
-
+<script src="script.js">
+   
 </script>
 </html>
