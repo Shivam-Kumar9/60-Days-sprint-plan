@@ -42,7 +42,7 @@ button{
     padding: 10px 30px;
     border-radius: 40%;
     color: #000;
-    background: #1fe46a;
+    background: #8ddfac;
     font-size: x-large;
 }
 
@@ -55,7 +55,7 @@ button{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    background: #a9a4eb;
+    background: #555097;
 
 }
 #login h3{
