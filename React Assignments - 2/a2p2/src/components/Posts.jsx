@@ -19,13 +19,13 @@ function Posts() {
       setLoading(false)
        let res = await axios.get('https://jsonplaceholder.typicode.com/posts')
        setPosts(res?.data)
-       console.log(res);
+       console.log(res.data);
     } catch (error) {
       { 
         /*Complete the missing code*/
       }
       setLoading(false)
-      setError(error)
+      setError(true)
     }
   }
 
