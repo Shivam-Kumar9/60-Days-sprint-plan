@@ -21,6 +21,19 @@ const links = [
     to: "/login",
     label: "LOGIN",
   },
+  
+  {
+    to: '/courses',
+    label: 'COURSES'
+  },
+  {
+    to: '/fees',
+    label: 'FEES'
+  },
+  {
+    to: '/learn',
+    label: 'LEARN'
+  }
 ];
 
 export default function Navbar() {
