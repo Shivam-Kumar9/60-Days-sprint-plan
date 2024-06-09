@@ -1,0 +1,140 @@
+{
+    "tickets": [
+      {
+        "id": "1",
+        "title": "Fix CSS issues on homepage",
+        "status": "Pending",
+        "priority": 3,
+        "description": "Resolve styling issues that are affecting the homepage layout.",
+        "assignee": "JohnDoe"
+      },
+      {
+        "title": "Implement user login edited",
+        "description": "Add user login and registration functionality.",
+        "assignee": "pkb",
+        "status": "In Progress",
+        "priority": "5",
+        "id": "3"
+      },
+      {
+        "id": "5",
+        "title": "Setup CI/CD pipeline",
+        "status": "In Progress",
+        "priority": 2,
+        "description": "Configure continuous integration and continuous deployment pipeline.",
+        "assignee": "ChrisDavis"
+      },
+      {
+        "id": "6",
+        "title": "Write unit tests",
+        "status": "Pending",
+        "priority": 6,
+        "description": "Increase code coverage by writing unit tests for existing codebase.",
+        "assignee": "EmmaWilson"
+      },
+      {
+        "id": "7",
+        "title": "Migrate to new server",
+        "status": "Completed",
+        "priority": 4,
+        "description": "Move the application to a new and more powerful server.",
+        "assignee": "OliviaTaylor"
+      },
+      {
+        "id": "8",
+        "title": "Update documentation",
+        "status": "Pending",
+        "priority": 8,
+        "description": "Ensure that all project documentation is up-to-date.",
+        "assignee": "LiamAnderson"
+      },
+      {
+        "title": "Integrate third-party API edited",
+        "description": "Connect to and use the third-party API for additional functionality.",
+        "assignee": "SophiaMartinez",
+        "status": "Pending",
+        "priority": "4",
+        "id": "9"
+      },
+      {
+        "id": "10",
+        "title": "Fix security vulnerabilities",
+        "status": "Completed",
+        "priority": 1,
+        "description": "Patch all known security vulnerabilities in the application.",
+        "assignee": "JamesLee"
+      },
+      {
+        "id": "11",
+        "title": "Improve mobile responsiveness",
+        "status": "Pending",
+        "priority": 3,
+        "description": "Make sure the website is fully responsive on all mobile devices.",
+        "assignee": "IsabellaHernandez"
+      },
+      {
+        "title": "Implement dark mode",
+        "description": "Add a dark mode option for users.",
+        "assignee": "AlexanderKing",
+        "status": "Completed",
+        "priority": 5,
+        "id": "12"
+      },
+      {
+        "id": "13",
+        "title": "Redesign user dashboard",
+        "status": "Pending",
+        "priority": 6,
+        "description": "Revamp the user dashboard for a better user experience.",
+        "assignee": "CharlotteWright"
+      },
+      {
+        "id": "14",
+        "title": "Add search functionality",
+        "status": "Completed",
+        "priority": 2,
+        "description": "Implement a search feature to allow users to find content easily.",
+        "assignee": "BenjaminLopez"
+      },
+      {
+        "id": "15",
+        "title": "Improve accessibility",
+        "status": "Pending",
+        "priority": 4,
+        "description": "Ensure the website is accessible to all users, including those with disabilities.",
+        "assignee": "MiaHill"
+      },
+      {
+        "id": "16",
+        "title": "Refactor codebase",
+        "status": "In Progress",
+        "priority": 7,
+        "description": "Clean up and optimize the existing codebase.",
+        "assignee": "NoahScott"
+      },
+      {
+        "id": "18",
+        "title": "Create API documentation",
+        "status": "Completed",
+        "priority": 8,
+        "description": "Write comprehensive documentation for the public API.",
+        "assignee": "ElijahBaker"
+      },
+      {
+        "id": "19",
+        "title": "Set up error tracking",
+        "status": "Pending",
+        "priority": 2,
+        "description": "Implement a system for tracking and logging errors.",
+        "assignee": "HarperGonzalez"
+      },
+      {
+        "id": "20",
+        "title": "Conduct user testing",
+        "status": "In Progress",
+        "priority": 3,
+        "description": "Arrange and conduct testing sessions with real users.",
+        "assignee": "EvelynPerez"
+      }
+    ]
+  }
