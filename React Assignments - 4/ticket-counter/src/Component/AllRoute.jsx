@@ -1,14 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../pagas/Home'
+import Home from '../Pagas/Home'
 import PrivateRoutes from './PrivateRoutes'
-import About from '../pagas/About'
-import Tasks from '../pagas/Tickets page/Tickets'
-import Login from '../pagas/Login'
-import Contect from '../pagas/Contect'
-import ViewTicket from '../pagas/Tickets page/ViewTicket'
-import CreateTicket from '../pagas/Tickets page/CreateTicket'
-import EditTicket from '../pagas/Tickets page/EditTicket'
+import About from '../Pagas/About'
+import Tasks from '../Pagas/Tickets page/Tickets'
+import Login from '../Pagas/Login'
+import Contect from '../Pagas/Contect'
+import ViewTicket from '../Pagas/Tickets page/ViewTicket'
+import CreateTicket from '../Pagas/Tickets page/CreateTicket'
+import EditTicket from '../Pagas/Tickets page/EditTicket'
 
 export default function AllRoute() {
   return (
